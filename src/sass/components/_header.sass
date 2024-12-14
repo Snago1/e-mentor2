@@ -1,0 +1,106 @@
+.header
+    &__container
+        background: #10B582
+    &__wrapper
+        width: 117rem
+        margin: 0 auto
+        // position: relative
+
+
+
+    &__social
+        cursor: pointer
+        display: flex
+        flex-direction: column
+        gap: 3rem
+        width: 2.2rem
+        height: 12.6rem
+
+    &__list
+        display: flex
+        gap: 4rem
+        justify-content: center
+        padding: 4rem 0 4rem 0
+        &-item
+            cursor: pointer
+    
+    &__title
+        text-align: center
+        // padding-bottom: 2rem
+        &-third
+            text-align: center
+            margin: 0 auto
+            width: 37.8rem
+            padding-bottom: 3rem
+    &__btn
+        display: block
+        margin: 0 auto
+        background: #FA9F42
+        color: #FDFDFD
+        font-size: 1.6rem
+        font-family: Raleway
+        font-weight: 500
+        line-height: 1.6rem
+        padding: 2rem 4.7rem 2rem 4.7rem
+        border: none
+        border-radius: 0 2rem 0 2rem
+        cursor: pointer
+    
+    // &-text
+    //     transform: rotate(180deg)        
+    //     &-arrow
+    //         transform: rotate(-90deg)
+    //         width: .8rem
+    //         height: 1.6rem
+.img-item
+    width: 24rem
+    height: 30rem
+.header
+    &__grid
+        display: grid
+        grid-template-columns: 1fr 2fr 1fr
+        grid-template-rows: 20% 65% 
+    
+    &__social
+        grid-column: 1/2
+        grid-row: 1/2
+    &__logo
+        grid-column: 2/3
+        grid-row: 1/2
+        justify-self: center
+        align-self: end
+        cursor: pointer
+
+    &__img-block-left
+        grid-column: 1/2
+        grid-row: 2/3
+        align-self: end
+        overflow: auto
+    &__img-block-right
+        grid-column: 3/4
+        grid-row: 1
+        justify-self: end
+        align-self: start
+        overflow: auto
+    &__text-block
+        grid-column: 2/3
+        grid-row: 2/3
+        width: 54.2rem
+        height: 31.4rem       
+      
+    &__scrolldown  
+        cursor: pointer 
+        margin-bottom: 6rem
+        margin-right: -5rem
+        grid-column: 3/4
+        grid-row: 2/3
+        justify-self: end
+        align-self: end
+        transform: rotate(-90deg)
+        &::before 
+            content: "\2190" /* Unicode символ стрелки влево */
+            margin-right: .8rem
+            
+            display: inline-block
+    
+          
