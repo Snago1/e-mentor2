@@ -4,7 +4,7 @@
     &__wrapper
         width: 100%
         display: flex
-        
+        flex-direction: column       
         border-top: .1rem solid #E9E9ED
         position: relative
 
@@ -40,15 +40,16 @@
                     margin-bottom: 1rem
        
         
-    &-down
-        position: absolute
-        border-top: .1rem solid #E9E9ED
-        width: 144rem
-        display: flex
-        justify-content: space-between  
-        left: 10%
-        &-text-right
+        &-down
+            position: absolute
+            border-top: .1rem solid #E9E9ED
+            width: 144rem
             display: flex
-            justify-content: space-between
-            column-gap: 3rem 
+            justify-content: space-between  
+            left: 10%
+            flex: 2
+            &-text-right
+                display: flex
+                justify-content: space-between
+                column-gap: 3rem 
 
